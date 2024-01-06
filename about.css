@@ -1,0 +1,38 @@
+.programming-langs {
+    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.langs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+.lang img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.langs h2 {
+    color: gray;
+}
+.langs h2:hover {
+    color: green;
+}
+
+

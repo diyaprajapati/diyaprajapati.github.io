@@ -1,0 +1,125 @@
+/* Header Starts Here */
+
+
+.nav-name {
+    font-family:"Lucida Handwriting",cursive;
+    font: weight 1000px;
+}
+body {
+    transition: background-color 0.5s ease;
+}
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+* {
+  left: 0;
+  right: 0;
+  font-family: Poppins, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.pages-links a {
+  text-decoration: none;
+  color: rgb(148, 201, 148);
+  transition: all ease-in 0.5s;
+}
+
+.pages-links a:hover {
+  text-decoration: underline;
+}
+
+.page-link-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+.page-link-data a {
+  text-decoration: none;
+  color: rgb(148, 201, 148);
+  transition: all ease-in 0.5s;
+  font-weight: 500;
+
+}
+
+.btn {
+  background-color: rgb(148, 201, 148);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* Main Part Starts here */ 
+
+.main-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+
+}
+.about-me-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 7px;
+}
+
+.main-img {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0;
+}
+.aboutme h1 {
+  color: green;
+  font-size: 50px;
+  margin-block-start: 0;
+  margin-block-end: 1 em;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.aboutme h2 {
+  color: green;
+  font-weight: 600;
+  font-size: xx-large;
+  margin-block-start: 1 em;
+  margin-block-end: 0;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+.info {
+  color: gray;
+}
