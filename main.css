@@ -73,8 +73,67 @@ body {
   align-items: center;
   gap: 10px;
 }
+/*
+/*Add this CSS for mobile menu
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: #333333bd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 10px;
+}
+.mobile-menu a{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.pages-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.mobile-menu a:hover {
+  color: rbg(148,201,148);
+}
+/*.mobile-menu .visible {
+  display: flex;
+  opacity: 1;
+}
+.pages-links .visible {
+  opacity: 0;
+}
+*/
 
+/*CSS for mobile menu
+.dropdown-menu .visible .mobile-menu {
+  display: flex;
+  animation: fadeInDown 0.5s ease;
+}
 
+/*Animation keyframes
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: traslateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*/
 /* Main Part Starts here */ 
 
 .main-part {
@@ -122,4 +181,35 @@ body {
 }
 .info {
   color: gray;
+}
+
+/*Media query for smaller screens*/
+@media screen and (max-width: 830px) {
+  .main-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .main-img {
+    margin-left: 0;
+    margin-top: 5;
+  }
+  .about-me-desc {
+    text-align:left;
+  }
+  /*.mobile-menu-btn {
+    display: block;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .pages-links {
+    display: none;
+  }
+  .dropdown-menu .visible {
+    display: block;
+  }
+  .mobile-menu a{
+    margin:5px 0;
+  } */
 }
