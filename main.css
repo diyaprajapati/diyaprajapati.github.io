@@ -1,6 +1,5 @@
 /* Header Starts Here */
 
-
 .nav-name {
     font-family:"Lucida Handwriting",cursive;
     font: weight 1000px;
@@ -24,6 +23,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .pages-links {
   display: flex;
@@ -37,6 +37,7 @@ body {
   text-decoration: none;
   color: rgb(148, 201, 148);
   transition: all ease-in 0.5s;
+  display: flex;
 }
 
 .pages-links a:hover {
@@ -73,67 +74,43 @@ body {
   align-items: center;
   gap: 10px;
 }
-/*
-/*Add this CSS for mobile menu
-.mobile-menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  background-color: #333333bd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  padding: 10px;
-}
-.mobile-menu a{
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.5s ease;
-}
-.pages-links {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-.mobile-menu a:hover {
-  color: rbg(148,201,148);
-}
-/*.mobile-menu .visible {
-  display: flex;
-  opacity: 1;
-}
-.pages-links .visible {
-  opacity: 0;
-}
-*/
 
-/*CSS for mobile menu
-.dropdown-menu .visible .mobile-menu {
+/*for side bar*/
+.sidebar {
+  position:absolute;
+  top: 0;
+  right: 0;
+  height:100vh;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.81);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+.sidebar .pages-links a{
+  color: rgb(13, 137, 13);
+}
+.sidebar .btn {
+  background-color: rgb(20, 140, 20);
+}
+.sidebar .sidebar-grp {
+  flex-direction: column;
   display: flex;
-  animation: fadeInDown 0.5s ease;
+  position: relative;
+  gap: 10px;
+}
+.sidebar .pages-links {
+  flex-direction: column;
+}
+.sidebar .btn-group {
+  flex-direction: column;
+  gap: 10px;
 }
 
-/*Animation keyframes
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: traslateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
+
 /* Main Part Starts here */ 
 
 .main-part {
@@ -197,19 +174,15 @@ body {
   .about-me-desc {
     text-align:left;
   }
-  /*.mobile-menu-btn {
-    display: block;
-  }
-  .mobile-menu {
-    display: flex;
-  }
-  .pages-links {
+  
+}
+@media(max-width:750px) {
+  .hideOnMobile {
     display: none;
   }
-  .dropdown-menu .visible {
-    display: block;
+}
+@media(min-width:750px) {
+  .hideOnBigScr {
+    display: none;
   }
-  .mobile-menu a{
-    margin:5px 0;
-  } */
 }

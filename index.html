@@ -14,19 +14,71 @@
     <header class="header">
       <nav class="navbar">
         <h2 class="nav-name">Diya Prajapati</h2>
-        <!--Responsive navigation button for smaller screens
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-          <img src="menu-bar.png" alt="Menu Icon" height="35">
-        </button>
--->
+        
         <!--Navigation links for larger screens-->
         <div class="pages-links">
-          <div class="page-link-data">
-            <a href="index.html">Home</a>
+          <div class="hideOnMobile">
+            <div class="page-link-data">
+             <a href="index.html">Home</a>
           </div>
+        </div>
+        <div class="hideOnMobile">
           <div class="page-link-data">
             <a href="about.html">About</a>
           </div>
+        </div>
+        <div class="hideOnMobile">
+          <div class="page-link-data">
+            <a href="project.html"
+              >Projects</a
+            >
+          </div>
+        </div>
+        <div class="hideOnMobile">
+          <div class="page-link-data">
+            <a href="#"
+              >Experience</a
+            ></div>
+          </div>
+        </div>
+        
+        <!--Button group for larger screens-->
+        <div class="hideOnMobile">
+          <div class="btn-group">
+            <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
+          <button onclick="toggleTheme()" class="btn">
+            <img src="theme.png" height="20" />
+          </button>
+        </div>
+      </div>
+      <div class="hideOnBigScr">
+        <div class="menu-btn-sidebar">
+          <div onclick=showSidebar()><a href="#"><img
+          src="hamburger.svg"
+          height="30px"
+          width="30px"
+        /></a>
+        </div>
+      </div>
+    </div>
+
+        <!--nav for side bar-->
+        <div class="sidebar">
+          <div class="sidebar-grp">
+            <div class="close-btn">
+            <div onclick=hideSidebar()>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="pages-links">
+        <div class="page-link-data">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="page-link-data">
+          <a href="about.html">About</a>
+        </div>
           <div class="page-link-data">
             <a href="project.html"
               >Projects</a
@@ -38,7 +90,7 @@
             >
           </div>
         </div>
-
+        
         <!--Button group for larger screens-->
         <div class="btn-group">
           <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
@@ -46,23 +98,10 @@
             <img src="theme.png" height="20" />
           </button>
         </div>
-<!--
-        //Dropdown menu container
-        <div class="dropdown-menu">
-          // Navigation links for smaller screens 
-          <div class="mobile-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Projects</a>
-            <a href="#">Experience</a>
-            <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing">Resume</a>
-            <button onclick="toggleTheme()" class="btn">
-            <img src="theme.png" height="20" />
-            </button>
-          </div>
-      </div>  -->
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+  </header>
     <div class="main-part">
     <div class="main-img">
     <img src="photo1704535167 (1)-modified.png" height="400" >
