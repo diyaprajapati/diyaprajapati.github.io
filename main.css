@@ -186,13 +186,7 @@ body {
     display: none;
   }
 }
-.close-btn {
+
+.dark-theme .menu-btn-sidebar path {
   fill:white;
-  
-}
-.menu-btn-sidebar {
-  fill:black;
-}
-.menu-btn-sidebar-dark{
-  fill: white;
 }

@@ -234,9 +234,7 @@ body {
     display: none;
   }
 }
-.close-btn {
-  fill:white;
-}
-.dark-theme .menu-btn-sidebar {
+
+.dark-theme .menu-btn-sidebar path{
   fill:white;
 }

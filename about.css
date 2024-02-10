@@ -200,9 +200,7 @@ body {
       display: none;
     }
   }
-  .close-btn {
+
+.dark-theme .menu-btn-sidebar path{
     fill:white;
-  }
-  .dark-theme .menu-btn-sidebar {
-    fill:white;
-  }
+}
