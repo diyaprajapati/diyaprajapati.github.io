@@ -186,3 +186,13 @@ body {
     display: none;
   }
 }
+.close-btn {
+  fill:white;
+  
+}
+.menu-btn-sidebar {
+  fill:black;
+}
+.menu-btn-sidebar-dark{
+  fill: white;
+}

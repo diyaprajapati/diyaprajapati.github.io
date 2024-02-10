@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diya</title>
-    <link rel="stylesheet" href="main.css">
+    <title>About</title>
     <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,32 +14,97 @@
     <header class="header">
       <nav class="navbar">
         <h2 class="nav-name">Diya Prajapati</h2>
+
+        <!--Navigation Links for larger screens-->
         <div class="pages-links">
+          <div class="hideOnMobile">
           <div class="page-link-data">
             <a href="index.html">Home</a>
           </div>
+        </div>
+        <div class="hideOnMobile">
           <div class="page-link-data">
             <a href="about.html">About</a>
           </div>
+        </div>
+        <div class="hideOnMobile">
           <div class="page-link-data">
             <a href="project.html"
               >Projects</a
             >
           </div>
+        </div>
+        <div class="hideOnMobile">
           <div class="page-link-data">
             <a href="#"
               >Experience</a
             >
           </div>
         </div>
+        </div>
+
+        <!--Button group for larger screens-->
+        <div class="hideOnMobile">
         <div class="btn-group">
           <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
           <button onclick="toggleTheme()" class="btn">
             <img src="theme.png" height="20" />
           </button>
         </div>
+      </div>
+      <div class="hideOnBigScr">
+        <div class="menu-btn-sidebar">
+          <div onclick=showSidebar()><a href="#"><img
+          src="hamburger.svg"
+          height="30px"
+          width="30px"
+        /></a>
+        </div>
+      </div>
+    </div>
+
+    <!--nav for side bar-->
+    <div class="sidebar">
+      <div class="sidebar-grp">
+        <div class="close-btn">
+        <div onclick=hideSidebar()>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="pages-links">
+    <div class="page-link-data">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="page-link-data">
+      <a href="about.html">About</a>
+    </div>
+      <div class="page-link-data">
+        <a href="project.html"
+          >Projects</a
+        >
+      </div>
+      <div class="page-link-data">
+        <a href="#"
+          >Experience</a
+        >
+      </div>
+    </div>
+    
+    <!--Button group for larger screens-->
+    <div class="btn-group">
+      <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
+      <button onclick="toggleTheme()" class="btn">
+        <img src="theme.png" height="20" />
+      </button>
+    </div>
+  </div>
+</div>
       </nav>
     </header>
+
+    <!--About page info-->
     <div>
         <div class="programming-langs"> 
             <h1>Programming Languages That I Know</h1>

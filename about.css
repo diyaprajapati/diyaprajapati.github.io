@@ -1,3 +1,81 @@
+/* Header Starts Here */
+
+
+.nav-name {
+    font-family:"Lucida Handwriting",cursive;
+    font: weight 1000px;
+}
+body {
+    transition: background-color 0.5s ease;
+}
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+* {
+  left: 0;
+  right: 0;
+  font-family: Poppins, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.pages-links a {
+  text-decoration: none;
+  color: rgb(148, 201, 148);
+  transition: all ease-in 0.5s;
+}
+
+.pages-links a:hover {
+  text-decoration: underline;
+}
+
+.page-link-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+.page-link-data a {
+  text-decoration: none;
+  color: rgb(148, 201, 148);
+  transition: all ease-in 0.5s;
+  font-weight: 500;
+
+}
+
+.btn {
+  background-color: rgb(148, 201, 148);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/*main part start here*/
+
 .programming-langs {
     color: green;
     display: flex;
@@ -34,6 +112,41 @@
 .langs h2:hover {
     color: green;
 }
+
+/*for side bar*/
+.sidebar {
+    position:absolute;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.81);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    display: none;
+  }
+  .sidebar .pages-links a{
+    color: rgb(13, 137, 13);
+  }
+  .sidebar .btn {
+    background-color: rgb(20, 140, 20);
+  }
+  .sidebar .sidebar-grp {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    gap: 10px;
+  }
+  .sidebar .pages-links {
+    flex-direction: column;
+  }
+  .sidebar .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 550px) {
@@ -77,3 +190,19 @@
         align-items: center;
     }
 }
+@media(max-width:750px) {
+    .hideOnMobile {
+      display: none;
+    }
+  }
+  @media(min-width:750px) {
+    .hideOnBigScr {
+      display: none;
+    }
+  }
+  .close-btn {
+    fill:white;
+  }
+  .dark-theme .menu-btn-sidebar {
+    fill:white;
+  }

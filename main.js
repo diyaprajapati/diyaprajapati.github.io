@@ -1,7 +1,7 @@
 function toggleTheme() {
-    
     document.body.classList.toggle('dark-theme');
-
+    let sbarBtn = document.querySelector(".menu-btn-sidebar");
+    sbarBtn.classList.toggle(".menu-btn-sidebar-dark");
 }
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
