@@ -14,32 +14,97 @@
     <header class="header">
         <nav class="navbar">
           <h2 class="nav-name">Diya Prajapati</h2>
+
+          <!--Navigation links for larger screens-->
           <div class="pages-links">
+            <div class="hideOnMobile">
             <div class="page-link-data">
               <a href="index.html">Home</a>
             </div>
+          </div>
+          <div class="hideOnMobile">
             <div class="page-link-data">
               <a href="about.html">About</a>
             </div>
+          </div>
+          <div class="hideOnMobile">
             <div class="page-link-data">
               <a href="project.html"
                 >Projects</a
               >
             </div>
+          </div>
+          <div class="hideOnMobile">
             <div class="page-link-data">
               <a href="#"
                 >Experience</a
               >
             </div>
           </div>
+          </div>
+
+          <!--Buttons-->
+          <div class="hideOnMobile">
           <div class="btn-group">
             <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
             <button onclick="toggleTheme()" class="btn">
               <img src="theme.png" height="20" />
             </button>
           </div>
+        </div>
+
+        <div class="hideOnBigScr">
+          <div class="menu-btn-sidebar">
+            <div onclick=showSidebar()><a href="#"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"/>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Nav for sidebar-->
+      <div class="sidebar">
+        <div class="sidebar-grp">
+          <div class="close-btn">
+          <div onclick=hideSidebar()>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+          <path fill="#ffffff" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="pages-links">
+      <div class="page-link-data">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="page-link-data">
+        <a href="about.html">About</a>
+      </div>
+        <div class="page-link-data">
+          <a href="project.html"
+            >Projects</a
+          >
+        </div>
+        <div class="page-link-data">
+          <a href="#"
+            >Experience</a
+          >
+        </div>
+      </div>
+      
+      <!--Button group for larger screens-->
+      <div class="btn-group">
+        <a href="https://drive.google.com/file/d/1fFc0lVIJPvMb0-1bWIFzUQ-r3amH1GIS/view?usp=sharing"><button class="btn">Resume</button></a>
+        <button onclick="toggleTheme()" class="btn">
+          <img src="theme.png" height="20" />
+        </button>
+      </div>
+    </div>
+  </div>
         </nav>
       </header>
+
+      <!--Projects info-->
       <div class="nme">
         <h1>PROJECTS</h1>
       </div>
