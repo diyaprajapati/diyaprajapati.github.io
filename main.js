@@ -18,7 +18,6 @@ function toggleTheme() {
     else {
       localStorage.setItem("dark","false");
     }
-
     let sbarBtn = document.querySelector(".menu-btn-sidebar");
 }
 function showSidebar() {

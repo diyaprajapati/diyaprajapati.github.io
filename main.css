@@ -59,7 +59,7 @@ body {
 }
 
 .btn {
-  background-color: rgb(148, 201, 148);
+  background-color: rgb(148, 201, 148); 
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -72,7 +72,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 /*for side bar*/
@@ -108,6 +108,21 @@ body {
 .sidebar .btn-group {
   flex-direction: column;
   gap: 10px;
+}
+.toggle-to-dark .sun-icon{
+  fill: #fff;
+}
+.toggle-to-dark-side path{
+  fill: white;
+}
+.dark-theme .moon-icon {
+  display: none;
+}
+.sun-icon {
+  display: none;
+}
+.dark-theme .sun-icon {
+  display: inline-block;
 }
 
 
