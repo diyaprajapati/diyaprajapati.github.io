@@ -109,6 +109,22 @@ body {
   gap: 10px;
 }
 
+.toggle-to-dark .sun-icon{
+  fill: #fff;
+}
+.toggle-to-dark-side path{
+  fill: white;
+}
+.dark-theme .moon-icon {
+  display: none;
+}
+.sun-icon {
+  display: none;
+}
+.dark-theme .sun-icon {
+  display: inline-block;
+}
+
 /* main part */
 
 .nme {

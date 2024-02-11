@@ -71,8 +71,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
+
+
 
 /*main part start here*/
 
@@ -146,6 +148,22 @@ body {
   .sidebar .btn-group {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .toggle-to-dark .sun-icon{
+    fill: #fff;
+  }
+  .toggle-to-dark-side path{
+    fill: white;
+  }
+  .dark-theme .moon-icon {
+    display: none;
+  }
+  .sun-icon {
+    display: none;
+  }
+  .dark-theme .sun-icon {
+    display: inline-block;
   }
 
 /* Media query for smaller screens */
